@@ -13,7 +13,7 @@ export default function EditMovieForm({ id, title, genre, watched }) {
     e.preventDefault();
 
     try {
-      const res = await fetch(`http://localhost:3000/api/movies/${id}`, {
+      const res = await fetch(`/api/movies/${id}`, {
         method: "PUT",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

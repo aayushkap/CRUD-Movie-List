@@ -18,7 +18,7 @@ export default function Add() {
     }
 
     try {
-      const res = await fetch("http://localhost:3000/api/movies", {
+      const res = await fetch("/api/movies", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ title, genre, watched }),

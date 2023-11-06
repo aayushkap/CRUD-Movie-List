@@ -9,7 +9,7 @@ export default function RemoveBtn({ id }) {
     );
 
     if (confirm) {
-      const res = await fetch(`http://localhost:3000/api/movies?id=${id}`, {
+      const res = await fetch(`/api/movies?id=${id}`, {
         method: "DELETE",
       });
       if (res.ok) {

@@ -10,7 +10,7 @@ import FilterBar from "./FilterBar";
 
 const getMovies = async () => {
   try {
-    const res = await fetch("http://localhost:3000/api/movies", {
+    const res = await fetch("/api/movies", {
       cache: "no-store",
     }); // This will use the GET method by default.
     const json = await res.json();

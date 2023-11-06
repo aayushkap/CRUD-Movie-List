@@ -2,7 +2,7 @@ import EditMovieForm from "@/components/EditMovieForm";
 
 async function getMovieById(id) {
   try {
-    const res = await fetch(`http://localhost:3000/api/movies/${id}`, {
+    const res = await fetch(`/api/movies/${id}`, {
       cache: "no-store",
     });
 
